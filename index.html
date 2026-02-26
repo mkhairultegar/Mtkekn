@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Absensi Tadarus - Masjid Nurul Hidayah</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Absensi Tadarus</h1>
+        <h2>Masjid Nurul Hidayah</h2>
+
+        <div class="form-section">
+            <input type="text" id="namaInput" placeholder="Masukkan nama anggota">
+            <button onclick="tambahAnggota()">Tambah Anggota</button>
+        </div>
+
+        <h3>Daftar Anggota</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nama</th>
+                    <th>Total Hadir</th>
+                    <th>Aksi</th>
+                </tr>
+            </thead>
+            <tbody id="tabelAnggota"></tbody>
+        </table>
+
+        <button class="reset-btn" onclick="resetData()">Reset Semua Data</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
